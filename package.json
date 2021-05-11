@@ -1,0 +1,12 @@
+{
+  "name": "splitfilt",
+  "version": "1.0.7",
+  "description": "Split text files and filter given a string or an array of strings.",
+  "main": "splitfilt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "usuario616",
+  "license": "ISC"
+}
