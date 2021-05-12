@@ -22,9 +22,9 @@ const splitfilt = {
     const isRegex = !(typeof separator == 'string');
     let separator2 = separator;
     if (keepsSeparator) {
-      if (!isRegex && separator.match(/(?=[\.\|\$\*\?\+\^\(\)\[\]])/)) {
+      if (!isRegex && separator.match(/(?=[\.\|\$\*\?\+\^\(\)\[\]\{\}])/)) {
         let separatorAux = separator.replace(
-          /(?=[\.\|\$\*\?\+\^\(\)\[\]])/,
+          /(?=[\.\|\$\*\?\+\^\(\)\[\]\{\}])/,
           '\\$&'
         );
         separator2 = new RegExp('(?<=' + separatorAux + ')');
